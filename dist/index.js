@@ -26523,6 +26523,7 @@ function getRunnerOSVersion() {
     ubuntu24: 'ubuntu-24.04',
     win19: 'windows-2019',
     win22: 'windows-2022',
+    win25: 'windows-2025',
     macos13: 'macOS-13',
     macos14: 'macOS-14',
     macos15: 'macOS-15',
@@ -26545,7 +26546,7 @@ function getRunnerOSVersion() {
       return deprecatedContainerFromEnvImageOS
     } else {
       throw new Error(
-        "Tried to map a target OS from env. variable 'ImageOS' (got " +
+        "[Fork] Tried to map a target OS from env. variable 'ImageOS' (got " +
           `${process.env.ImageOS}` +
           "), but failed. If you're using a " +
           "self-hosted runner, you should set 'env': 'ImageOS': ... to one of the following: " +
