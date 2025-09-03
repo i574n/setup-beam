@@ -671,7 +671,7 @@ function getRunnerOSVersion() {
       return deprecatedContainerFromEnvImageOS
     } else {
       throw new Error(
-        "Tried to map a target OS from env. variable 'ImageOS' (got " +
+        "[Fork] Tried to map a target OS from env. variable 'ImageOS' (got " +
           `${process.env.ImageOS}` +
           "), but failed. If you're using a " +
           "self-hosted runner, you should set 'env': 'ImageOS': ... to one of the following: " +
