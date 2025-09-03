@@ -1,5 +1,5 @@
 ---
-name: setup-beam
+name: setup-beam-win25
 
 description: >
   Set up a BEAM-based CI environment, supporting languages and tools such as Erlang/OTP, Elixir, Gleam, `rebar3`, and `hex`.
